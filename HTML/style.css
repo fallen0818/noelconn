@@ -9,6 +9,14 @@
   justify-content: space-between;
   gap: 20px;
 }
+.container_3 {
+  display: flex-column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 100px;
+  
+}
 .header {
   background-color: black;
   display: flex;
