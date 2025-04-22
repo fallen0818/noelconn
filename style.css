@@ -1,8 +1,9 @@
 .header {
   display: grid;
   grid-template-columns: 400px 1fr;
-  background-color: black;
+  background-color: rgb(44, 40, 40);
   padding: 30px;
+  grid-auto-flow: column;
 }
 .logo {
   align-content: top;
@@ -19,16 +20,35 @@ a {
   color: papayawhip;
   font-size: large;
   text-decoration: none;
+  transition: 0.15s;
 }
 a:hover {
   color: white;
   background-color: rgb(95, 120, 56);
-  transition: 0.15s;
+  height: 100%;
+  padding: 30px;
+  margin: -30px;
 }
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 600px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 90px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 40px;
+}
+body {
+  font-family: "popins", sans-serif;
 }
