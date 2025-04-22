@@ -3,7 +3,6 @@
   grid-template-columns: 400px 1fr;
   background-color: rgb(44, 40, 40);
   padding: 30px;
-  grid-auto-flow: column;
 }
 .logo {
   align-content: top;
@@ -35,6 +34,16 @@ a:hover {
   align-items: center;
   flex-direction: column;
   height: 600px;
+}
+.vote {
+  display: inline-block;
+  margin-left: 300px;
+  background-color: salmon;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
 }
 * {
   margin: 0;
