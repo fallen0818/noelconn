@@ -37,7 +37,6 @@ a:hover {
 }
 .vote {
   display: inline-block;
-  margin-left: 300px;
   background-color: salmon;
   padding: 20px;
   margin-top: 20px;
@@ -60,4 +59,6 @@ h3 {
 }
 body {
   font-family: "popins", sans-serif;
+  display: grid;
+  flex-wrap: wrap;
 }
