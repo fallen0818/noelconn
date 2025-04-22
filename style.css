@@ -10,7 +10,10 @@
   align-content: top;
 }
 .nav {
-  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 h1 {
   color: papayawhip;
