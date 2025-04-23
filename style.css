@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +5,8 @@
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  gap: 10px;
+  grid-template-columns: (2, 1fr);
+  gap: 2px;
 }
 .box1,
 .box2,
@@ -15,25 +14,22 @@
 .box4,
 .box5,
 .box6 {
-  background-color: lightblue;
+  background-color: rgb(182, 230, 247);
   border: 1px solid black;
-  padding: 1em;
   text-align: center;
   font-family: sans-serif;
   color: rgb(155, 54, 54);
   cursor: pointer;
+  padding: 20px;
 }
 .box1 {
-    text-align: center;
-    grid-column: 1 / span 1;
-    height: 20px;
-} 
+  text-align: center;
+  grid-column: 1 / span 1;
+}
 .box2 {
-    background-color: darkgrey;
-    text-align: center;
-    grid-column: 2 / span 1;
-    height: 20px;
-;
+  background-color: darkgrey;
+  text-align: center;
+  grid-column: 2 / span 1;
 }
 .box5,
 .box6 {
@@ -47,74 +43,38 @@ body {
   background-color: papayawhip;
 }
 a {
-    color: black;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding: 10px 20px;
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 a:hover {
-    color: blue;
+  color: blue;
 }
 img {
-    width: 200px;
-=======
-* {
-  margin: 0;
-  padding: 0;
+  width: 200px;
 }
-
-.container {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  gap: 10px;
-}
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6 {
-  background-color: lightblue;
-  border: 1px solid black;
-  padding: 1em;
-  text-align: center;
-  font-family: sans-serif;
-  color: rgb(155, 54, 54);
-  cursor: pointer;
-}
-.box1 {
-    text-align: center;
-    grid-column: 1 / span 1;
-    height: 20px;
-} 
-.box2 {
-    background-color: darkgrey;
-    text-align: center;
+@media (max-width: 56em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
     grid-column: 2 / span 1;
-    height: 20px;
-;
+    width: 100%;
+    margin: auto;
+  }
 }
-.box5,
-.box6 {
-  text-align: center;
+.container {
+  grid-template-columns: repeat(2, 1fr);
 }
-
-body {
-  background-color: rgb(213, 213, 197);
-}
-.container :hover {
-  background-color: papayawhip;
-}
-a {
-    color: black;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-a:hover {
-    color: blue;
-}
-img {
-    width: 200px;
->>>>>>> 0d133ccfecd78763c98a8a9fb7375a37b498f9cd
+button {
+  background-color: bisque;
+  font-size: larger;
+  padding: 20px 40px;
+  cursor: pointer;
 }
