@@ -4,28 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-website</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <style>
+      * {
+        margin: 1px;
+        padding: 1px;
+      }
+
+      .container {
+        display: grid;
+        gap: 2px;
+        transition: 0.15s ease-in-out;
+        grid-template-columns: repeat(2, 1fr); /* Correct syntax */
+      }
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5,
+      .box6,
+      .box7,
+      .box8 {
+        border: 1px solid whitesmoke;
+        text-align: center;
+        font-family: sans-serif;
+        color: rgb(155, 54, 54);
+        cursor: pointer;
+        padding: 20px;
+      }
+      .box1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: darkgrey;
+      }
+      .box2 {
+        display: flex;
+        background-color: darkgrey;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .box4 {
+        align-content: center;
+      }
+
+      body {
+        background-color: rgb(12, 12, 12);
+      }
+
+      a {
+        color: papayawhip;
+        font-size: 1.2em;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+      }
+      img {
+        width: 200px;
+      }
+      @media (max-width: 100%) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8 {
+          grid-column: 2 / span 1;
+          width: 100%;
+          margin: auto;
+        }
+      }
+      button {
+        font-size: larger;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(155, 54, 54);
+        padding: 10px 50px;
+        border-radius: 10px;
+        color: papayawhip;
+      }
+      button:hover {
+        background-color: rgb(56, 70, 150);
+      }
+      button:active {
+        background-color: rgb(114, 150, 56);
+        transform: translateY(4px);
+      }
+
+      p {
+        font-size: 1.2em;
+        text-align: center;
+        color: papayawhip;
+      }
+    </style>
     <div class="container">
       <div class="box1">
         <a href="noel-connect.com" target="_blank">noel-connect.com</a>
+        <button>Subscribe</button>
       </div>
       <div class="box2">
-        <a href="">Home</a>
+        <a href="https://noel-connect.com">Home</a>
         <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://instagram" target="_blank">instagram</a>
+        <a href="https://instagram" target="_blank">Instagram</a>
       </div>
       <div class="box3">
         <img src="images/Your Story - Post.png" alt="Batanes" />
       </div>
       <div class="box4">
-        <img src="images/Your Story - Post.png" alt="Batanes" />
+        <img src="images/batanes.jpg" alt="Batanes" />
       </div>
       <div class="box5">
-        <button>Subcribe</button>
+        <p>
+          Life is a journey filled with challenges and triumphs, and the way we
+          navigate it often shapes our sense of fulfillment. Embrace change as
+          an opportunity for growth, and don't be afraid to step outside your
+          comfort zone—it’s where the most meaningful experiences happen.
+          Cultivate gratitude for what you have, while striving for what you
+          want, and remember that setbacks are not failures, but stepping stones
+          to success. Treat others with kindness and empathy, as the connections
+          we build often provide the greatest joy. Most importantly, prioritize
+          self-care and self-respect, because a healthy mind and heart are the
+          foundation of a truly fulfilling life.
+        </p>
       </div>
-      <div class="box6">ITEM 6</div>
+      <div class="box6">
+        <p>
+          A positive outlook transforms the way we experience life, allowing us
+          to see opportunities in challenges and beauty in the everyday. It
+          encourages us to focus on what we can control and appreciate, rather
+          than dwell on what we lack or cannot change. By embracing optimism, we
+          empower ourselves to face difficulties with resilience and hope,
+          fostering a mindset that attracts growth, success, and happiness. A
+          positive view doesn’t mean ignoring hardships; rather, it’s about
+          choosing to believe that brighter days are always ahead and that every
+          setback carries the seed of a new beginning.
+        </p>
+      </div>
+      <div class="box7">ITEM 7</div>
+      <div class="box8">ITEM 8</div>
     </div>
   </body>
 </html>
