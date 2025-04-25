@@ -37,16 +37,78 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        background-color: darkgrey;
+        background-color: black;
+        transition: transform 0.3s ease-in-out,
+          background-color 0.3s ease-in-out;
+        border: 4px solid;
+        border-image-source: linear-gradient(to right, blue, red);
+        border-image-slice: 1;
+        animation: border-animation 2s linear infinite;
+      }
+
+      @keyframes border-animation {
+        0% {
+          border-image-source: linear-gradient(to right, blue, red);
+        }
+        50% {
+          border-image-source: linear-gradient(to right, red, blue);
+        }
+        100% {
+          border-image-source: linear-gradient(to right, blue, red);
+        }
+      }
+
+      .box1:hover {
+        transform: scale(1.05);
+        background-color: grey;
       }
       .box2 {
         display: flex;
-        background-color: darkgrey;
+        background-color: black;
         justify-content: space-between;
         flex-wrap: wrap;
+        border: 4px solid;
+        border-image-source: linear-gradient(to right, blue, red);
+        border-image-slice: 1;
+        animation: border-animation 2s linear infinite;
       }
+
+      @keyframes border-animation {
+        0% {
+          border-image-source: linear-gradient(to right, blue, red);
+        }
+        50% {
+          border-image-source: linear-gradient(to right, red, blue);
+        }
+        100% {
+          border-image-source: linear-gradient(to right, blue, red);
+        }
+      }
+
       .box4 {
         align-content: center;
+      }
+      .box7 {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 1 / span 2;
+        justify-content: center;
+        border: 4px solid;
+        border-image-source: linear-gradient(to right, blue, red);
+        border-image-slice: 1;
+        animation: border-animation 2s linear infinite;
+      }
+
+      @keyframes border-animation {
+        0% {
+          border-image-source: linear-gradient(to right, blue, red);
+        }
+        50% {
+          border-image-source: linear-gradient(to right, red, blue);
+        }
+        100% {
+          border-image-source: linear-gradient(to right, blue, red);
+        }
       }
 
       body {
@@ -74,8 +136,7 @@
         .box4,
         .box5,
         .box6,
-        .box7,
-        .box8 {
+        .box7 {
           grid-column: 2 / span 1;
           width: 100%;
           margin: auto;
@@ -110,7 +171,7 @@
         <button>Subscribe</button>
       </div>
       <div class="box2">
-        <a href="https://noel-connect.com">Home</a>
+        <a href="https://noel-connect.com">NextPage</a>
         <a href="https://facebook.com" target="_blank">Facebook</a>
         <a href="https://instagram" target="_blank">Instagram</a>
       </div>
@@ -147,8 +208,7 @@
           setback carries the seed of a new beginning.
         </p>
       </div>
-      <div class="box7">ITEM 7</div>
-      <div class="box8">ITEM 8</div>
+      <div class="box7">&copy; 2025 Noel. All rights reserved.</div>
     </div>
   </body>
 </html>
